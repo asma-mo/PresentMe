@@ -21,7 +21,7 @@ struct NoufAlfaris: View {
                 .clipShape(Circle())
                 .overlay(
                     Circle()
-                        .stroke(lavender, lineWidth: 5)
+                        .stroke(lavender, lineWidth: 8)
                 )
                 .foregroundStyle(.tint)
                 
