@@ -9,13 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack(spacing: 20) {
+                NavigationLink(destination: ContentViewAsma()) {
+                    BoxView(title: "Asma")
+                }
+                NavigationLink(destination: NoufAlfaris()) {
+                    BoxView(title: "Nouf")
+                }
+                NavigationLink(destination:
+                                AhlamMj()) {
+                    BoxView(title: "Ahlam")
+                }
+
+                NavigationLink(destination: ContentViewRimas()) {
+                    BoxView(title: "Rimas")
+                }
+            }
+            .navigationTitle("Main Menu")
+            .padding()
         }
-        .padding()
+        .accentColor(Color(red: 112/255, green: 118/255, blue: 184/255)) // Set the back arrow color to purple
     }
 }
 
